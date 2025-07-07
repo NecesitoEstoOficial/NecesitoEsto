@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "crons": [
+    {
+      "path": "/api/notificaciones",
+      "schedule": "30 17 * * *"
+    },
+    {
+      "path": "/api/eliminarDemanda",
+      "schedule": "0 9 * * *"
+    }
+  ],
+  "build": {
+    "env": {
+      "NPM_CONFIG_REGISTRY": "https://registry.npmmirror.com"
+    }
+  }
+}
