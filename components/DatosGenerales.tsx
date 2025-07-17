@@ -234,7 +234,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
             type="text"
             value={profile.apellido}
             onChange={(e) => setProfile({ ...profile, apellido: e.target.value })}
-            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
           />
         </div>
 
@@ -245,7 +245,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
             type="text"
             value={profile.empresa}
             onChange={(e) => setProfile({ ...profile, empresa: e.target.value })}
-            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
           />
         </div>
 
@@ -263,7 +263,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
                     setProfile({ ...profile, pais_id: e.target.value });
                   }
                 }}
-                className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+                className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
               >
                 <option value="">Seleccione un país</option>
                 {paises.map((pais) => (
@@ -280,7 +280,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
                 value={nuevoPais}
                 onChange={(e) => setNuevoPais(e.target.value)}
                 placeholder="Nuevo país"
-                className="border border-slate-950 rounded-md p-3 shadow-sm mt-2 focus:outline-none focus:ring focus:ring-blue-500 transition"
+                className="border border-slate-950 rounded-md p-3 shadow-sm mt-2 focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
               />
             )}
         </div>
@@ -293,7 +293,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
             type="text"
             value={profile.provincia}
             onChange={(e) => setProfile({ ...profile, provincia: e.target.value })}
-            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
           />
         </div>
 
@@ -304,7 +304,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
             type="text"
             value={profile.municipio}
             onChange={(e) => setProfile({ ...profile, municipio: e.target.value })}
-            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
           />
         </div>
 
@@ -315,7 +315,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
             type="text"
             value={profile.localidad}
             onChange={(e) => setProfile({ ...profile, localidad: e.target.value })}
-            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
           />
         </div>
 
@@ -326,7 +326,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
             type="text"
             value={profile.direccion}
             onChange={(e) => setProfile({ ...profile, direccion: e.target.value })}
-            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
           />
         </div>
 
@@ -337,7 +337,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
             type="text"
             value={profile.codigo_postal}
             onChange={(e) => setProfile({ ...profile, codigo_postal: e.target.value })}
-            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
           />
         </div>
 
@@ -348,7 +348,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
             type="text"
             value={profile.telefono}
             onChange={(e) => setProfile({ ...profile, telefono: e.target.value })}
-            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
           />
         </div>
 
@@ -356,7 +356,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
         <div className="flex flex-col mb-1">
           <label className="block mb-2 font-semibold">Categoria</label>
           <select
-            className="border border-slate-950 rounded-md p-3"
+            className="border border-slate-950 rounded-md p-3 bg-white"
             value={profile.id_categoria || ""}
             onChange={(e) => {
               if (e.target.value === "nueva") {
@@ -386,7 +386,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
               placeholder="Nueva categoría"
               value={nuevaCategoria}
               onChange={(e) => setNuevaCategoria(e.target.value)}
-              className="border border-slate-950 rounded-md p-2 mt-2"
+              className="border border-slate-950 rounded-md p-2 mt-2 bg-white"
             />
           )}
 
@@ -396,7 +396,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
         <div className="flex flex-col mb-1">
           <label className="block mb-2 font-semibold">Rubro</label>
           <select
-            className="border border-slate-950 rounded-md p-3"
+            className="border border-slate-950 rounded-md p-3 bg-white"
             value={profile.rubro_id}
             onChange={(e) => {
               if (e.target.value === "nuevo") {
@@ -426,7 +426,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
               placeholder="Nuevo rubro"
               value={nuevoRubro}
               onChange={(e) => setNuevoRubro(e.target.value)}
-              className="border border-slate-950 rounded-md p-2 mt-2"
+              className="border border-slate-950 rounded-md p-2 mt-2 bg-white"
             />
           )}
 
@@ -436,7 +436,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
       {/* Mostrar la fecha de creación al final correctamente */}
       <div className="mt-6">
         <label className="block mb-2 font-semibold">Fecha de Creación</label>
-        <p className="border border-slate-950 rounded-md p-3 bg-gray-100 shadow-sm">
+        <p className="border border-slate-950 rounded-md p-3 bg-gray-100 shadow-sm bg-white">
           {formattedFecha}
         </p>
       </div>
