@@ -223,7 +223,7 @@ const DatosGenerales: React.FC<DatosGeneralesProps> = ({ data }) => {
             type="text"
             value={profile.nombre}
             onChange={(e) => setProfile({ ...profile, nombre: e.target.value })}
-            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition"
+            className="border border-slate-950 rounded-md p-3 shadow-sm focus:outline-none focus:ring focus:ring-blue-500 transition bg-white"
           />
         </div>
 
